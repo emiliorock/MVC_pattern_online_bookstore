@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>MyBookStore</display-name>
+
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>Servlet.UserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/sign_up_complete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+	<welcome-file-list>
+		<welcome-file>user_signup.jsp</welcome-file>
+	</welcome-file-list>
+
+	<welcome-file-list>
+		<welcome-file>seller_signup.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<welcome-file-list>
+		<welcome-file>Confirmation.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<welcome-file-list>
+		<welcome-file>sign_up_complete.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<welcome-file-list>
+		<welcome-file>user_profile.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>SaleServlet</servlet-name>
+		<servlet-class>Servlet.SaleServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SaleServlet</servlet-name>
+		<url-pattern>/seller_register_item</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SaleServlet</servlet-name>
+		<url-pattern>/seller_check_item</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>seller_register_item.jsp</welcome-file>
+	</welcome-file-list>
+	<welcome-file-list>
+		<welcome-file>seller_check_item.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>SearchServlet</servlet-name>
+		<servlet-class>Servlet.SearchServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/forward</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ShoppingServlet</servlet-name>
+		<servlet-class>Servlet.ShoppingServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ShoppingServlet</servlet-name>
+		<url-pattern>/forwardshopping</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>Servlet.AdminServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/forwardadmin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserActivityServlet</servlet-name>
+		<servlet-class>Servlet.UserActivityServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserActivityServlet</servlet-name>
+		<url-pattern>/forwardactivity</url-pattern>
+	</servlet-mapping>
+	
+
+
+
+</web-app>
