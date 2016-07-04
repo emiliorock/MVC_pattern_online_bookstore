@@ -1,1 +1,1 @@
-# MVC_pattern_online_bookstore
+# online_bookstore
